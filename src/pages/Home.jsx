@@ -1,9 +1,9 @@
-import React from 'react';
+import useMain from '../components/Layouts/Main';
 
 import HomeContainer from '../containers/Home';
 
 const HomePage = () => {
-  return <HomeContainer />
+  return useMain(HomeContainer);
 };
 
 export default HomePage;
