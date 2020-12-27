@@ -1,4 +1,3 @@
-import React from 'react';
 import useMain from '../../components/Layouts/Main';
 
 import TicketCreateContainer from '../../containers/Ticket/Create';
