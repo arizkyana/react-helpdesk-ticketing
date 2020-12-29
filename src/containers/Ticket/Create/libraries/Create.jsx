@@ -42,7 +42,8 @@ const Create = () => {
     <>
       <Breadcrumb>
         <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-        <Breadcrumb.Item active>Create new Ticket</Breadcrumb.Item>
+        <Breadcrumb.Item>Ticket</Breadcrumb.Item>
+        <Breadcrumb.Item active>Create new</Breadcrumb.Item>
       </Breadcrumb>
       <Formik
         initialValues={CreateFormInitialValues}

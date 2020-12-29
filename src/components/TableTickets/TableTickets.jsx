@@ -6,7 +6,18 @@ import {
     Button,
 } from 'react-bootstrap';
 
+import {
+    useHistory,
+} from 'react-router-dom';
+
 const TableTickets = () => {
+
+    let history = useHistory();
+
+    const handleDetail = (id) => {
+        history.push(`/ticket/${id}`);
+    };
+
     return (
         <>
             <Table striped bordered hover responsive>
@@ -26,7 +37,11 @@ const TableTickets = () => {
                         <td>TC-001</td>
                         <td>High</td>
                         <td>
-                            <Button size="sm" variant="secondary">
+                            <Button
+                                size="sm"
+                                variant="secondary"
+                                onClick={() => handleDetail(1)}
+                            >
                                 Detail
                             </Button>
                         </td>
